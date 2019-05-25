@@ -1,0 +1,663 @@
+
+	 
+/* Unverisal selector that effects centers all tags for padding and margin */
+* {
+  box-sizing: border-box;
+}
+
+/* The html selector affects the entire webpage */
+html{
+font-size: 16px;
+background-color: rgb(227, 221, 231);
+width: 100%;
+margin:auto;
+}
+/* The headerbanner selector that effects the header and icon */
+#headerbanner {
+	background-size: contain, cover;
+	background-image: url('../images/Finallogo.svg'), url('../images/banner.png') ;
+	background-position: center;
+	height: 10rem;
+	background-repeat: no-repeat;
+	display: flex;
+	box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.5);
+}
+/* The selector navol sets margin, padding, overflow, background, font, and list-type */
+.nav_ol_homepage {
+	margin-top: 2%;
+	padding-left: 0%;
+	margin-bottom:0%;
+	overflow: auto;
+    list-style-type: none;
+    background-color: #403e3e;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	width: 100%;
+	box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.5);
+}
+/* The selector navli sets display and float */
+.nav_li_homepage {
+    display: inline-block;
+	float: left;
+}
+/* The selector navli sets display, color, text-align, padding, text-decoration, and transition */
+.nav_a_homepage {
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem 1rem;
+    text-decoration: none;
+	transition: all 0.3s ease;
+}
+/* The selector nava:hover sets background-color */
+.nav_a_homepage:hover {
+    background-color: #91908f;
+}
+/* The selector active sets a background color that cannot change */
+.active {
+    background-color: #9c6cc7 !important;
+}
+/* The selector container sets margin, position, width, height, padding, background, and overflow */
+.container {
+	margin: 2% auto 0% auto;
+	position: relative;
+	width: 95%;
+	height: auto;
+	padding-bottom:40%;
+	background: #4c4c4c;
+	overflow: hidden;
+	box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.5);
+}
+/* The selector slide_img sets position, width, heigth, overflow, z-index */
+.slide_img {
+	position: absolute;
+	width: 100%;
+	height:100%;
+	overflow: hidden;
+	z-index: -1;
+}
+/* The selector slide_img img sets width, heigth, and overflow */
+.slideshow_img{
+	width:100%;
+	height: auto;
+	overflow: hidden;
+}
+/* The selector i1, i2, and i3 sets the display */
+#i1, #i2, #i3 ,#i4 {
+	display: none;
+}
+/* The selector slideshow_nav sets width, height, bottom, position, text-align, and z-index */
+.slideshow_nav {
+	width: 100%;
+	height: 11px;
+	bottom: 5%;
+	position: absolute;
+	text-align: center;
+	z-index: 99;
+}
+/* The selector dots sets width, height, bottom, position, text-align, and z-index */
+.dots{
+	width: 18px;
+	height: 18px;
+	margin: 0 0.5%;
+	position: relative;
+	border-radius: 50%;
+	display: inline-block;
+	background: rgba(0,0,0,0.6);
+}
+/* The selector #i1:checked ~ #one, #i2:checked ~ #two, #i3:checked ~ #three sets z-index and transition */
+#i1:checked ~ #one, #i2:checked ~ #two, #i3:checked ~ #three, #i4:checked ~ #four{
+	z-index: 9;
+	transition: 0.2s;
+}
+#i1:checked ~ .slideshow_nav #dot1, #i2:checked ~ .slideshow_nav #dot2, #i3:checked ~ .slideshow_nav #dot3, #i4:checked ~ .slideshow_nav #dot4{
+	background: #a6a4a3;
+}
+
+/* The selector welcome_button sets background-color, display, padding, font-weight, text-docoration, and color */
+.welcome_button {
+	background-color: #403e3e;
+	display: block;
+	padding: 1%;
+	font-weight: bold;
+	text-decoration: none;
+	color: #ffffff;
+	font-size: 1rem;
+	box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.5);
+}
+/* The selector subtitle:hover sets a background color when hovered over tag */
+.welcome_button:hover {
+	background-color: #91908f;
+}
+/* The selector lcolor sets text-decoration and color */
+.button_textcolor {
+	text-decoration: none;
+	color: #ffffff;
+}
+/* The selector center_right sets position, top, left, and transform */
+.cright {
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+}
+/* The selector center_left sets position, top, left, and transform */
+.cleft {
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+}
+/* The selector socialmedia_icons sets background-color, color, font-family, text-align, padding, margin, and overflow */
+.socialmedia_icons {
+	background-color:rgba(21, 4, 38,0.8);
+	color: #ffffff;
+	text-align: center;
+	padding-left: 0%;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	overflow:hidden;
+	box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.5);
+	width:95%;
+	margin-right:auto;
+	margin-left:auto;
+}
+/* The selector socialmedia_size sets font, background, text-align, margin */
+.socialmedia_size {
+	font-weight:bold;
+	font-size: 1.4rem;
+	font-family: Arial, Helvetica, sans-serif;
+	background-color:rgba(255, 255, 255, 0.2);
+	text-align: center;
+	width: 100%;
+	margin: auto;
+	margin-top:1%;
+	padding: 1%;
+}
+/* The selector socialmedia sets width, height, display, and opacity */
+.socialmedia {
+	width: 6%;
+	height: 6%;
+	margin: 2%;
+	display: inline-block;
+	opacity: 0.3;
+}
+/* The selector searchmedia sets width, height, display, and opacity */
+.searchmedia {
+	margin: 2%;
+	width: 6%;
+	height: 6%;
+	display: inline-block;
+}
+/* The selector socialmedia:hover sets the opacity */
+.socialmedia:hover{
+	opacity: 1;
+}
+/* The selector footer_column_p sets the margin, padding, margin-bottom, font, color, and text-align  */
+.footer_column_p {
+	margin: auto;
+	overflow: auto;
+    list-style-type: none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	text-align: center;
+	font-size: 0.6rem;
+	color: rgba(255, 255, 255, 0.4);
+	text-decoration: none;
+}
+/* The selector footer_column_p:hover sets the color */
+.footer_column_p:hover{
+	 color: rgba(255, 255, 255, 1.0);
+}
+/* The selector row sets the width */
+.row {
+    width: 100%;
+}
+/* The selector column sets the tex-align, width, margin, font, color, and background */
+.column {
+	text-align: left;
+    float: left;
+    width: 25%;
+    padding: 0% 1% 1% 1%;
+    height: 150px;
+	margin-top:1%;
+	color: rgba(255, 255, 255, 0.4);
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 0.7rem;
+	overflow:hidden;
+	margin-top: 1%;
+}
+/* The selector bottom sets the color, marign, font, and padding*/
+.bottom{
+	background-color: #403e3e;
+	margin: 0%;
+	color: #ffffff;
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: center;
+    padding: 0.5% 0 0.5% 0;
+	box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.5);
+}
+/* The selector footer_column_p:hover sets the color */
+.socialmedia_footer {
+	width: 3%;
+	height: 3%;
+	display: inline-block;
+	opacity: 0.3;
+}
+/* The selector copyright sets the color */
+.copyright {
+	opacity: 0.3;
+	font-size: 0.7rem;
+}
+/* The selector aboutus_p sets the font, text-align, width, margin, padding, background, line-height, and list-style */
+.aboutus_p {
+	font-size: 1.2rem;
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: center;
+	width: 100%;
+	margin: auto;
+	margin-top:1%;
+	padding: 1%;
+	background-color:rgba(255, 255, 255, 0.2);
+	line-height: 150%;
+	list-style-type: none;
+	font-weight: bold;
+}
+/* The selector profile_row sets margin */
+.profile_row {
+	margin-left:0%;
+}
+/* The selector profile_column sets the float, width, margin, and padding */
+.profile_column {
+    float: left;
+    width: 21%;
+    margin: 2%;	
+}
+/* The selector profile_card sets box-shadow */
+.profile_card {
+    box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.5);
+
+}
+/* The selector profile_img sets width */
+.profile_img {
+	width: 100%;
+	margin-bottom:-3%;
+}
+/* The selector profile_container sets padding */
+.profile_container {
+	font-family: Arial, Helvetica, sans-serif;
+	overflow:hidden;
+	font-size:1rem;
+	font-weight: bold;
+    padding:3%;
+	background-color:rgba(135, 39, 66,0.8);
+	border: 3px solid rgba(135, 39, 66,1);
+}
+/* The selector profile_container:after and profile_row:after sets cotent, clear, and display */
+.profile_container::after, .profile_row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+/* The selector profile_title sets color */
+.profile_title {
+    color: rgba(255,255,255,0.5);
+}
+/* The selector profile_button sets color */
+.profile_button {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:1rem;
+	font-weight: bold;
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 3%;
+    color: #ffffff;
+    background-color:rgba(21, 4, 38,0.5);
+    text-align: center;
+    width: 100%;
+	text-shadow: 0px 1px 1px #000000;
+}
+/* The selector profile_button:hover sets color */
+.profile_button:hover {
+    background-color:rgba(21, 4, 38,0.7);
+}
+
+.inidv_row {
+	margin-left:8%;
+}
+/* The selector profile_column sets the float, width, margin, and padding */
+.inidv_column {
+    float: left;
+    width: 25%;
+    margin: 2%;
+	margin-right:0%;
+	margin-left:21%;
+}
+.adjust_column {
+	margin-left:0%;
+}
+/* The selector profile_card sets box-shadow */
+.inidv_card {
+    box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.5);
+	
+}
+/* The selector profile_img sets width */
+.inidv_img {
+	width: 100%;
+	
+}
+/* The selector profile_container sets padding */
+.inidv_container {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:1rem;
+	font-weight: bold;
+	padding-top:0.5%;
+	padding-bottom:0.1%;
+	background-color:rgba(135, 39, 66,0.8);
+}
+/* The selector profile_container:after and profile_row:after sets cotent, clear, and display */
+.inidv_container::after, .inidv_row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+/* Style for table element */
+table {
+	border: 0.1em solid #000000;
+	 box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.5);
+	border-collapse: collapse;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 3%;
+	width: 100%;
+	border:0;
+}
+/* Style specifies border and padding for th and td elements */
+th, td {
+	border: 0.1em solid rgba(21, 4, 38,0.8);
+	padding: 1rem;
+	color: #000000;
+}
+/* Style for th element */
+th {
+	background-color: rgba(135, 39, 66,0.8);
+	color: #FFFFFF ;
+}
+/* Style for caption element */
+caption {
+	font-size: 1.1em;
+	font-weight: bold;
+	margin-top:1%;
+	margin-bottom:2%;
+
+}
+/* Style for table element */
+table {
+	background-color: #FFFFFF;
+	width: 90%;
+}
+/* Style for caption element */
+caption {
+	color: #FFFFFF;
+}
+/* The selector galleryimg sets the marign, padding, display, width, height, and border */
+.galleryimg {
+	margin: 1% 2% 5% 2%;
+	display: inline-block;
+	width: 18%;
+	height: 18%;
+	border: 0.1rem solid #dddddd;
+}
+/* The selector galleryimg:hover sets the box-shadow */
+.galleryimg:hover {
+    box-shadow: 0px 0px 3px 2px rgba(135, 39, 66,0.8);
+}
+/* The selector adjust_profile sets the box-shadow */
+.adjust_profile {
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+	color: rgba(255, 255, 255, 0.4);
+}
+/* The selector adjust_profile:hover sets the box-shadow */
+.adjust_profile:hover {
+	color: rgba(255, 255, 255, 1.0);
+}
+/* The selector adjust_gallery sets the box-shadow */
+.adjust_gallery {
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+}
+/* The selector video sets the box-shadow */
+video {
+	margin-left: auto;
+	margin-right: auto;
+	height: 30%;
+	width: 30%;
+}
+/* The label selector that effects font-size, display, and padding */
+label, p {
+	display: block;
+	padding: 1%;
+}
+.avisited:link {
+	color:#61d7de;
+	text-decoration: none;
+}
+/* The selector a:visited sets color */
+.avisited:visited {
+	color:#71de61;
+}
+/* The selector avisited:hover sets color */
+.avisited:hover {
+	color: #db8b23;
+}
+/* The selector span sets color */
+span {
+	font-size: 0.7rem;
+}
+/* The selector form sets color */
+form {
+	color: #ffffff;
+	font-size: 0.7rem;
+}
+/* Media Queries for small screens */
+@media screen and (max-width: 480px){
+	
+/* welcome_button is effected by media query */
+.welcome_button {
+	width: 40%;
+	font-size: 0.8rem;
+}
+/* container is effected by media query */
+.container {
+	padding-bottom: 50%
+}
+/* socialmedia is effected by media query */
+.socialmedia {
+	width: 18%;
+	height: 18%;
+}
+/* socialmedia_footer is effected by media query */
+.socialmedia_footer {
+	display: none;
+}
+/* discolumn is effected by media query */
+.discolumn {
+	display: none;
+}
+	/* column is effected by media query */
+.column {
+	width:33%;
+	text-align:center;
+}
+/* .adjusts_about is effected by media query */
+.adjusts_about{
+margin-top: 5%;
+font-weight: bold;
+}
+/* aboutus_p is effected by media query */
+.aboutus_p {
+	font-weight: bold;
+	text-align: center;
+	padding:5%;
+	line-height: 150%;
+	font-size: 0.9rem;
+}
+/* profile_row is effected by media query */
+.profile_row {
+	padding:3%;
+	margin-right:3%;
+}
+/* profile_column is effected by media query */
+.profile_column {
+    width: 100%;
+    display: block;
+}
+/* searchmedia is effected by media query */
+.searchmedia {
+	width: 11%;
+	height: 11%;
+}
+/* inidv_card is effected by media query */
+.inidv_card {
+	width: 100%;
+}
+/* inidv_img is effected by media query */
+.inidv_img {
+	width: 200%;
+}
+/* discolumn2 is effected by media query */
+.discolumn2 {
+	display: none;
+}
+/* The selectors input, select, and textarea are affect by the media query*/
+input, select, textarea {
+display: block;
+width: 80%;
+margin-bottom: 2%;
+margin-top: 2%;
+font-size: 1.1em;
+margin-left: auto;
+margin-right: auto;
+}
+
+}
+
+/* Media Queries for ipads */
+@media screen and (min-device-width : 768px) and (max-device-width : 1024px){
+
+/* nav_a_homepage is effected by media query */
+.nav_a_homepage {
+	padding: 1.6rem 1.6rem;
+	font-size: 1.5rem;
+}
+/* container is effected by media query */
+.container {
+	padding-bottom: 51%
+}
+/* socialmedia is effected by media query */
+.socialmedia {
+	width: 12%;
+	height: 12%;
+}
+/* nav_a_homepage is effected by media query */
+.nav_a_homepage {
+	font-size: 1.5rem;
+}
+/* footer_column_p is effected by media query */
+.footer_column_p {
+	font-size: 0.9rem;
+}
+/* discolumn is effected by media query */
+.discolumn{
+	font-size: 0.8rem;
+}
+/* socialmedia_footer is effected by media query */
+.socialmedia_footer {
+	width: 5%;
+	height: 5%;
+}
+/* copyright is effected by media query */
+.copyright {
+font-size: 0.9rem;
+}
+/* column is effected by media query */
+.column {
+	margin-bottom: 1%;
+}
+/* adjusts_about is effected by media query */
+.adjusts_about {
+	font-weight: bold;
+}
+	/* aboutus_p is effected by media query */
+.aboutus_p {
+	padding:5%;
+	line-height: 150%;
+	font-size: 1.5rem;
+}
+/* profile_row is effected by media query */
+.profile_row {
+	padding:3%;
+	margin-right:0%;
+	margin-left:2%;
+}
+/* profile_column is effected by media query */
+.profile_column {
+    width: 45%;
+}
+/* profile_container is effected by media query */
+.profile_container {
+	font-size:1.4rem;
+}
+/* profile_button is effected by media query */
+.profile_button {
+	font-size:1.5rem;
+}
+/* searchmedia is effected by media query */
+.searchmedia {
+	width: 9%;
+	height: 9%;
+}
+/* inidv_img is effected by media query */
+.inidv_img {
+	width: 200%;
+	
+}
+/* inidv_card is effected by media query */
+.inidv_card {
+	width:100%;
+}
+/* discolumn2 is effected by media query */
+.discolumn2 {
+	display: none;
+}
+/* video is effected by media query */
+video {
+	height: 70%;
+	width: 70%;
+}
+/* The selectors input, select, and textarea are affect by the media query*/
+input, select, textarea {
+display: block;
+width: 80%;
+margin-bottom: 2%;
+margin-top: 2%;
+font-size: 1.6rem;
+margin-left: auto;
+margin-right: auto;
+}
+/* label is effected by media query */
+label {
+	font-size: 1.7rem;
+	padding: 1%;
+}
+/* galleryimg is effected by media query */
+.galleryimg {
+	width: 30%;
+	height: 30%;
+}
+}
